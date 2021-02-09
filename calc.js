@@ -84,3 +84,26 @@ class Calc {
         }
     }
 }
+
+
+
+
+
+function testInputData(value) {
+
+    if(value!==''){
+     if(typeof value !== 'number'){
+        
+        throw "Please input a number!";
+     }
+    }else{
+        throw "Error: it is empty!";
+    }
+     return value; 
+}
+
+
+
+ const test = new Calc;
+ test.add (testInputData('b'),testInputData(1));
+ 
