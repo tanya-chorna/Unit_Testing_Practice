@@ -20,6 +20,7 @@ class Calc {
         return this.memory;
         } else {
              console.log(new Error('Must input two values to add'));
+             return this.memory;
         }
     }
 
@@ -89,21 +90,27 @@ class Calc {
 
 
 
-function testInputData(value) {
 
-    if(value!==''){
-     if(typeof value !== 'number'){
+// function testInputData(value) {
+
+//     if(value!==''){
+//      if(typeof value !== 'number'){
         
-        throw "Please input a number!";
-     }
-    }else{
-        throw "Error: it is empty!";
-    }
-     return value; 
+//         throw "Please input a number!";
+//      }
+//     }else{
+//         throw "Error: it is empty!";
+//     }
+//      return value; 
+// }
+
+
+
+//  const test = new Calc;
+//  test.add (testInputData('b'),testInputData(1));
+ 
+
+module.exports = {
+    Calc: Calc
 }
 
-
-
- const test = new Calc;
- test.add (testInputData('b'),testInputData(1));
- 
